@@ -18,6 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 from rest_framework.routers import DefaultRouter
+from django.http import HttpResponse
 
 from users.views import UserViewSet
 from workspaces.views import WorkspaceViewSet
@@ -34,6 +35,10 @@ router.register("documents", DocumentViewSet)
 router.register("comments", CommentViewSet)
 router.register("tags", TagViewSet)
 router.register("auditlogs", AuditLogViewSet)
+
+
+def home(request):
+    return HttpResponse("🚀 CollabDocs API is running successfully!")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
