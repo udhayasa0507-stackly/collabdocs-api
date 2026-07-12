@@ -52,6 +52,9 @@ DB_PORT=5432
 
 SECRET_KEY=your-secret-key
 DEBUG=True
+
+DATABASE_URL=postgresql://collabuser:vVtaK8hs2QFH7a1D2K9oNHrkfJDHutfV@dpg-d94tg2cvikkc73cvl2ag-a.singapore-postgres.render.com/collabdocs_3e0z
+
 ```
 
 ## Run
